@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """First exercice of algorithm in Holberton cursus"""
 
 
