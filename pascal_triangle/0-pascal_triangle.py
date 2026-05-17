@@ -14,11 +14,11 @@ def pascal_triangle(n):
     pascal_list.append(first_list)
 
     for i in range(1, n):
-        past_list = pascal_list[-1]
+        old_list = pascal_list[-1]
         new_list = [1]
 
         for j in range(1, i):
-            new_list.append(past_list[j-1] + past_list[j])
+            new_list.append(old_list[j-1] + old_list[j])
 
         new_list.append(1)
         pascal_list.append(new_list)
