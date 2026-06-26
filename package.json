@@ -1,0 +1,25 @@
+{
+  "name": "holbertonschool-interview",
+  "version": "1.0.0",
+  "description": "This repository focuses on algorithms. We will go through various projects that might come up in job interviews.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuillaumeVaudet/holbertonschool-interview.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/GuillaumeVaudet/holbertonschool-interview/issues"
+  },
+  "homepage": "https://github.com/GuillaumeVaudet/holbertonschool-interview#readme",
+  "devDependencies": {
+    "request": "^2.88.2",
+    "semistandard": "^17.0.0"
+  }
+}
