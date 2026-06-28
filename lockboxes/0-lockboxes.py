@@ -8,14 +8,17 @@ def canUnlockAll(boxes):
     total_boxes = len(boxes)
     opened_boxes = {0}
 
-    def going_into_box(box_number):
-        keys_found = boxes[box_number]
+    keys_to_use = [0]
+
+    while len(keys_to_use) > 0:
+        current_key = keys_to_use.pop()
+
+        keys_found = boxes[current_key]
 
         for key in keys_found:
             if key < total_boxes and key not in opened_boxes:
                 opened_boxes.add(key)
-                going_into_box(key)
-    going_into_box(0)
+                keys_to_use.append(key)
 
     return len(opened_boxes) == total_boxes
 
