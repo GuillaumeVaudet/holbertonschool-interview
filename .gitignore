@@ -1,1 +1,5 @@
+# Javascript modules
 node_modules
+
+# Python modules
+.venv
