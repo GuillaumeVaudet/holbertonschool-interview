@@ -43,6 +43,7 @@ if __name__ == "__main__":
 
                 if counter % 10 == 0:
                     print_stats(total_size, status_code)
+        print_stats(total_size, status_code)
 
     except KeyboardInterrupt:
         print_stats(total_size, status_code)
