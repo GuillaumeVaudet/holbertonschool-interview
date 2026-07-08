@@ -40,7 +40,6 @@ if __name__ == "__main__":
                 if status in VALID_CODES:
                     status_code[status] = status_code.get(status, 0) + 1
 
-
             if counter % 10 == 0:
                 print_stats(total_size, status_code)
         print_stats(total_size, status_code)
