@@ -29,6 +29,7 @@ if __name__ == "__main__":
 
     try:
         for line in sys.stdin:
+            counter += 1
             matching_line = pattern.fullmatch(line.strip())
 
             if matching_line:
@@ -39,10 +40,9 @@ if __name__ == "__main__":
                 if status in VALID_CODES:
                     status_code[status] = status_code.get(status, 0) + 1
 
-                counter += 1
 
-                if counter % 10 == 0:
-                    print_stats(total_size, status_code)
+            if counter % 10 == 0:
+                print_stats(total_size, status_code)
         print_stats(total_size, status_code)
 
     except KeyboardInterrupt:
