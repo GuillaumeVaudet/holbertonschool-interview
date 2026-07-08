@@ -35,10 +35,10 @@ if __name__ == "__main__":
             if matching_line:
                 status = matching_line.group(1)
                 size = int(matching_line.group(2))
-                total_size += size
 
                 if status in VALID_CODES:
                     status_code[status] = status_code.get(status, 0) + 1
+                    total_size += size
 
 
             if counter % 10 == 0:
